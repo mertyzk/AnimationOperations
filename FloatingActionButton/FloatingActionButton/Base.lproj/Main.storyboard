@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FloatingActionButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50g-qp-yp6">
+                                <rect key="frame" x="309" y="806" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6Bf-Ui-YLd"/>
+                                    <constraint firstAttribute="width" constant="60" id="cII-ZO-d5p"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabMain"/>
+                                <connections>
+                                    <action selector="fabMainClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTW-3o-Pbz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulx-Qe-s2n">
+                                <rect key="frame" x="309" y="716" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BRT-ai-rrn"/>
+                                    <constraint firstAttribute="height" constant="60" id="qMD-6d-TO5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabBirinci"/>
+                                <connections>
+                                    <action selector="fabOneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s7Y-30-BT7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHF-z6-zhk">
+                                <rect key="frame" x="309" y="626" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0016600872839999999" green="0.51473721589999999" blue="0.078723003200000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KA4-hf-wZj"/>
+                                    <constraint firstAttribute="width" constant="60" id="zZV-hw-sVP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabIkinci"/>
+                                <connections>
+                                    <action selector="fabTwoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SPb-N3-gcr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ulx-Qe-s2n" secondAttribute="trailing" constant="45" id="5BL-qL-0K9"/>
+                            <constraint firstItem="50g-qp-yp6" firstAttribute="top" secondItem="Ulx-Qe-s2n" secondAttribute="bottom" constant="30" id="QZX-qb-XPr"/>
+                            <constraint firstItem="Ulx-Qe-s2n" firstAttribute="top" secondItem="ZHF-z6-zhk" secondAttribute="bottom" constant="30" id="aAr-rn-ODA"/>
+                            <constraint firstAttribute="bottom" secondItem="50g-qp-yp6" secondAttribute="bottom" constant="30" id="fDl-vt-igG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZHF-z6-zhk" secondAttribute="trailing" constant="45" id="gDz-bb-u8q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="50g-qp-yp6" secondAttribute="trailing" constant="45" id="o6X-uh-tbd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fabFirst" destination="Ulx-Qe-s2n" id="Jts-2E-bfV"/>
+                        <outlet property="fabMainOutlet" destination="50g-qp-yp6" id="kZU-eJ-ubC"/>
+                        <outlet property="fabTwo" destination="ZHF-z6-zhk" id="qo4-4e-mec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fabBirinci" width="36" height="36"/>
+        <image name="fabIkinci" width="36" height="36"/>
+        <image name="fabMain" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
